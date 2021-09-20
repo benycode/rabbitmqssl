@@ -7,7 +7,7 @@ RabbitMQ server running in a docker container with ssl enabled
 ```bash
 # Edit 'generate_tls_certificate.sh' to setup your DNS on the rabbitmq server
 ❯ ./generate_tls_certificate.sh
-❯ dock-compose up --build --detach
+❯ docker-compose up --build --detach
 ```
 
 ## UI management
