@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  rabbitmq.example.com:
+    hostname: rabbitmq.example.com
+    container_name: rabbitmq.example.com
+    image: rabbitmq:3-management-alpine
+    ports:
+      - 15671:15671
+      - 15672:15672
+      - 5671:5671
+      - 5672:5672
+      - 8883:8883
+    volumes:
+      - ./etc/:/etc/rabbitmq/
+      - ./log/:/usr/local/var/log/rabbitmq/log/
